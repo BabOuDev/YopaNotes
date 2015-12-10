@@ -1,0 +1,24 @@
+<h2>Notes overview</h2>
+<a class="logout-btn" ng-click="doLogout()">Logout</a>
+<div class="notes-container">
+	<table>
+		<thead>
+			<tr class="row">
+				<td class="col-xs-3">Created by</td>
+				<td class="col-xs-6">Title</td>
+				<td class="col-xs-3">Date</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="row" ng-repeat="note in notesService.list" ng-click="readNote($index)">
+				<td class="col-xs-3">{{note.createdBy}}</td>
+				<td class="col-xs-6">{{note.title}}</td>
+				<td class="col-xs-3">{{note.updatedAt | amCalendar}}</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="form-actions">
+		<button type="submit" ng-click="addNote()" class="btn btn-success">Create a new note &gt; </button>
+	</div>
+</div>
+

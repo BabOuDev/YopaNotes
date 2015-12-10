@@ -21,15 +21,69 @@
 																		 
 																		 
 
-# yopa-notes
+# yopa-notes 
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.14.0.
+by ROYER-ADNOT Remy
+
+
+## How to use
+
+You can login with these 4 usernames/passwords:
+
+  - Sarah / Sarah123
+  - Ben / Ben123
+  - Henry / Henry123
+  - Remy / Remy123
+
+## What's in it
+
+The development tools are:
+
+ - NodeJs - JS core
+ - NPM - dependencies manager
+ - Git - version control manager
+ - Grunt - Task runner
+ - Bower - client-side libraries manager
+ - Karma - Test Executer
+ - PhantomJS - Test Browser
+ - Compass - preprocessor SASS
+ - Angular - MVC JS Framework
+ - Bootstrap - CSS Toolkit
+
 
 ## Build & development
 
-Run `grunt` for building and `grunt serve` for preview.
+Prerequisites for dev environment:
+
+ - NodeJS v0.10.x+ and NPM v2.1.0+ installed
+ - Python 2.7+
+ - Gem 2.0.14+
+ - Compass 1.0.3+
+ 
+Clone the Git Repository
+
+	git clone https://github.com/BabOuDev/ByndApp
+
+Install node dependencies
+
+	npm install
+	
+Install bower dependencies
+
+	bower install
+
+Run Grunt default task to build everything
+
+	grunt
+	
+Run the Server
+
+	grunt serve
+	grunt serve:dist
 
 ## Testing
 
-Running `grunt test` will run the unit tests with karma.
+Run the unit tests with karma.
+
+	grunt test
+	

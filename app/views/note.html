@@ -1,0 +1,32 @@
+<h2>{{selectedNote.title}}</h2>
+<div class="add-subnote" ng-show="isAdding">
+	<form name="form" ng-submit="addSubnote();" role="form">
+		<div class="form-group">
+			<textarea type="note" name="note" id="note" class="form-control" ng-model="content" required />
+		</div>
+		<div class="form-actions">
+			<button type="submit" class="btn btn-success right">Add note ></button>
+			<a ng-click="cancel()" class="btn btn-link">Cancel</a>
+		</div>
+	</form>
+</div>
+<div class="nav-subnote" ng-hide="isAdding">
+	<div class="form-actions">
+		<a href="#/notes" class="btn btn-link"> &lt; Back to overview</a>
+		<button ng-click="openAddPanel()" type="submit" class="btn btn-success right">Add additional note &gt; </button>
+	</div>
+
+</div>
+<hr/>
+<div ng-repeat="subnote in selectedNote.subnotes" class="subnote row">
+	<div class="profile-picture col-xs-2"><img ng-src="images/{{subnote.picture}}"/></div>
+	<div class="caret-container">
+		<b class="caret caret-left"></b>
+		<b class="caret caret-left caret-inner"></b>
+	</div>
+	<div class="subnote-content col-xs-10">
+		<label class="name">{{subnote.createdBy}}</label>
+		<label class="date right">{{subnote.createdAt | amCalendar}}</label>
+		<p>{{subnote.content}}</p>
+	</div>
+</div>
