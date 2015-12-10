@@ -1,0 +1,36 @@
+{
+	"users":[
+		{
+			"id":0, 
+			"username":"Sarah", 
+			"password":"Sarah123", 
+			"firstname":"Sarah", 
+			"lastname":"Smith", 
+			"picture":"profile-1.jpg"
+		},
+		{
+			"id":1, 
+			"username":"Ben", 
+			"password":"Ben123", 
+			"firstname":"Ben", 
+			"lastname":"Parker", 
+			"picture":"profile-2.jpg"
+		},
+		{
+			"id":2, 
+			"username":"Henry", 
+			"password":"Henry123", 
+			"firstname":"Henry", 
+			"lastname":"Jones", 
+			"picture":"profile-3.jpg"
+		},
+		{
+			"id":3, 
+			"username":"Remy", 
+			"password":"Remy123", 
+			"firstname":"Remy", 
+			"lastname":"Royer-Adnot", 
+			"picture":"profile-default.jpg"
+		}
+    ]
+}

@@ -1,0 +1,18 @@
+<h2>New note</h2>
+<form name="form" ng-submit="addNote(note);" role="form">
+	<div class="form-group">
+		<label for="title">Title:</label>
+		<span ng-show="!note.title" class="text-danger">*</span>
+		<input type="text" name="title" id="title" class="form-control" ng-model="note.title" required />
+	</div>
+	<div class="form-group">
+		<label for="note">Note:</label>
+		<span ng-show="!note.content" class="text-danger">*</span>
+		<textarea type="note" name="note" id="note" class="form-control" ng-model="note.content" required />
+	</div>
+	<div class="form-actions">
+		<button type="submit" ng-disabled="!note.title || !note.content" class="btn btn-success right">Add note &gt; </button>
+		<a href="#/notes" class="btn btn-link">Cancel</a>
+	</div>
+	
+</form>
